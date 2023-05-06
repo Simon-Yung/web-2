@@ -1,0 +1,16 @@
+---
+fixedFooter: true
+---
+
+<!doctype html>
+<html style="scroll-behavior: smooth;">
+    <head>
+        <script src="{{ website.url }}/includes/assets/js/dynamic_background.js" defer></script>
+        {% include "components/head.njk" %}
+    </head>
+    <body class="">
+        {% include "components/header.njk" %}
+        {{ content | safe }}
+        {% include "components/footer.njk" %}
+    </body>
+</html>

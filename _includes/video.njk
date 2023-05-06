@@ -1,0 +1,15 @@
+---
+---
+
+<!doctype html>
+<html style="scroll-behavior: smooth;">
+    <head>{% include "components/head.njk" %}
+    </head>
+    <body class="home_page">
+        {% include "components/header.njk" %}
+        <div class="video_box">
+            {{ content | safe }}
+        </div>
+        {% include "components/footer.njk" %}
+    </body>
+</html>

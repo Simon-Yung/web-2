@@ -1,0 +1,22 @@
+---
+---
+
+<!doctype html>
+<html style="scroll-behavior: smooth;">
+    <head>
+        {% include "components/head.njk" %}
+    </head>
+    <body
+        class="home_page"
+        style=" background-image: url('{{ website.url }}/includes/assets/images/lichta.jpg'), url('{{ website.url
+            }}/includes/assets/images/Lichta.jpg'); background-attachment: fixed; /*filter: blur(05px); *//*opacity: 0.5;*/
+            background-size: cover;">
+        {% include "components/header.njk" %}
+        <div class="textBox" style="margin: auto auto auto 5%">
+            <div class="textBox__background">
+                {{ content | safe }}
+            </div>
+        </div>
+        {% include "components/footer.njk" %}
+    </body>
+</html>

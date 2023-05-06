@@ -1,0 +1,32 @@
+<!-- ^^^^ OVERIDE BY adding DUPLICATE TAG ABOVE ^^^^ -->
+<!-- SEO tag -->
+{%- if title %}<title> LICHTA | {{ title }}</title>
+{%- endif %}
+{%- if description %}
+    <meta name="description" content="{{ description }}"/>
+{%- endif %}
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ website.url }}/includes/assets/css/styles.css">
+    <link rel="canonical" href="{{ website.completeUrl }}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <!-- content= "index, follow"> -->
+    <!-- SEO tag -->
+    <!-- Essential META Tags --> <meta property="og:title" content=""/>
+    <meta property="og:locale" content="{{ lang }}"/>
+    {%- if description %}
+        <meta property="og:description" content="{{ description }}"/>
+    {%- endif %}
+    {%- if image %}
+    <meta property="og:image" content="{{ website.completeUrl }}{{ image }}">
+    {%- endif %}
+    <meta property="og:url" content="{{ website.completeUrl }}"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Recommended -->
+    <meta property="og:site_name" content=""/>
+    <meta name="twitter:image:alt" content="">
+    <!-- Required for Analytics -->
+    <!-- <meta name="twitter:site" content="@website-username"> -->

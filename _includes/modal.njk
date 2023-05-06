@@ -1,0 +1,16 @@
+---
+---
+
+<!doctype html>
+<html style="scroll-behavior: smooth;">
+    <head>
+        <script src="{{ website.url }}/includes/assets/js/modal_gallery.js" defer></script>
+        {% include "components/head.njk" %}
+    </head>
+    <body class="home_page">
+        {% include "components/header.njk" %}
+        {{ content | safe }}
+        {% include "components/modal.njk" %}
+        {% include "components/footer.njk" %}
+    </body>
+</html>

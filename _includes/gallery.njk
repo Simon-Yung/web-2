@@ -1,0 +1,58 @@
+---
+title: "gallery"
+description: ""
+permalink: "gallery/{{page.fileSlug}}/"
+tags: chapters
+buy_text: "Tirage d'Art / 1/10 / pcagalleryart"
+request_text: "Request"
+---
+
+<!doctype html>
+<html style="scroll-behavior: smooth;">
+    <head>
+        <script src="{{ website.url }}/includes/assets/js/modal_gallery.js" defer></script>
+        <!--overides-->
+        {%- if cover %}
+            <meta property="og:image" content="{{ website.completeUrl }}/gallery/{{ page.fileSlug }}/larges/{{ cover }}">
+        {%- elif products[0] %}
+            <meta property="og:image" content="{{ website.completeUrl }}/gallery/{{ page.fileSlug }}/larges/{{ product[0] }}">
+        {%- else %}
+            <meta property="og:image" content="{{ website.completeUrl }}/{{ collections[page.fileSlug][0] | replace('/thumbnails','/larges') }}">
+        {%- endif %}
+        {% include "components/head.njk" %}
+        <!--script>
+            window.addEventListener('DOMContentLoaded', () => {
+                let previews = document.getElementsByClassName('gallery__preview');
+                for (let i = 0; i < previews.length; i++) {
+                    previews[i].addEventListener('mousedown', () => {
+                        openModalGallery(`${
+                            previews[i].id
+                        }`)
+                    });
+                }
+            });
+        </script-->
+    </head>
+    <body
+        class="galleryPage">
+        <!--<img class="background" src="{{website.url}}/includes/assets/images/LAVES_VOLCANIQUES.jpg">-->
+        {% include "components/header.njk" %}
+        <div class="galleryPage__introBox">
+            <div class="galleryPage__introBox__background">
+                {{ content | safe }}
+            </div>
+        </div>
+        <div id="gallery" class="gallery" data-scaling-ratio="{{ image_scaling }}" data-buy-text="{{ buy_text }}" data-request-text="{{ request_text }}">
+            {%- set totalNumberOfImages = ( products | length ) + ( collections[page.fileSlug] | length ) %}
+            {%- set offset = products | length %}
+            {%- for product in products %}
+                <img id="{{ loop.index }}" class="gallery__preview" src="{{ website.url }}/gallery/{{ page.fileSlug }}/products/{{ product.image }}" data-pagination="{{ loop.index }}/{{ totalNumberOfImages }}" data-external-link="{{ product.link }}">
+            {%- endfor %}
+            {%- for image in collections[page.fileSlug] %}
+                <img id="{{ loop.index + offset }}" class="gallery__preview" src="{{ website.url }}/{{ image }}" data-pagination="{{ loop.index + offset }}/{{ totalNumberOfImages }}">
+            {%- endfor %}
+        </div>
+        {% include "components/footer.njk" %}
+        {% include "components/modal.njk" %}
+    </body>
+</html>
