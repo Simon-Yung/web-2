@@ -22,7 +22,7 @@ class ChapterList {
 <main class="chapterList">
 
 	<section class="chapter">
-		<img class="chapter__background" src="${data.website.url}/includes/assets/images/lichta.jpg">
+		<img class="chapter__background" src="${data.website.url}/includes/assets/images/lichta-full.jpg">
 		<a class="chapter__title" href="${data.website.url}/bio/"> 
 			<h2 class="chapter__title__text --underline">ARTISTE PEINTRE CONTEMPORAIN</h2>
 			<!-- div class="chapter__title__underline"></div -->

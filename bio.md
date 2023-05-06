@@ -1,17 +1,6 @@
 ---
-title: "ARTISTE"
 layout: textWithBg.njk
-lang: fr
-image: ""
-description: ""
 ---
-
-# Lichta
-
-&nbsp;
-
-&nbsp;
-
 ## ARTISTE PEINTRE CONTEMPORAIN
 
 &nbsp;

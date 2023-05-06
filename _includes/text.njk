@@ -6,12 +6,10 @@
     <head>
         {% include "components/head.njk" %}
     </head>
-    <body class="home_page">
+    <body class="">
         {% include "components/header.njk" %}
         <div class="textBox">
-            <div class="textBox__background">
-                {{ content | safe }}
-            </div>
+            {{ content | safe }}
         </div>
         {% include "components/footer.njk" %}
     </body>
