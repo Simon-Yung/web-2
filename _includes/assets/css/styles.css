@@ -274,7 +274,7 @@ body {
 .insta::before {
 	opacity: 1.0;
 	content: '';
-	background-image: url('/web/includes/assets/images/insta.png'), url('/includes/assets/images/insta.png');
+	background-image: url('/web-2/includes/assets/images/insta.png'), url('/includes/assets/images/insta.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	display: block;
@@ -470,7 +470,7 @@ body {
 
 .buy__button__price--icon::before {
 	content: '';
-	background-image: url('/web/includes/assets/images/cart.png'), url('/includes/assets/images/cart.png');
+	background-image: url('/web-2/includes/assets/images/cart.png'), url('/includes/assets/images/cart.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	display: inline-block;
@@ -511,7 +511,7 @@ body {
 
 .breadCrumbs::before {
 	content: '';
-	background-image: url('/web/includes/assets/images/home.png'), url('/includes/assets/images/home.png');
+	background-image: url('/web-2/includes/assets/images/home.png'), url('/includes/assets/images/home.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	opacity: 0.6;
