@@ -614,7 +614,7 @@ body {
 
 /* --- TEXT --- */
 .--lichtaBG {
-	background-image: url('web-2/includes/assets/images/lichta.jpg'), url('/includes/assets/images/lichta.jpg');
+	background-image: url('/web-2/includes/assets/images/lichta.jpg'), url('/includes/assets/images/lichta.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 }
