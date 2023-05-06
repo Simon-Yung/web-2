@@ -614,7 +614,7 @@ body {
 
 /* --- TEXT --- */
 .--lichtaBG {
-	background-image: url('web-2/includes/assets/images/lichta.jpg'), url('/includes/assets/images/Lichta.jpg');
+	background-image: url('web-2/includes/assets/images/lichta.jpg'), url('/includes/assets/images/lichta.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -624,6 +624,7 @@ body {
 	background-color: var(--bg-0-color);
 	background-color: #ffffff99;
 	padding: 1rem 2rem 6rem 2rem;
+	margin: auto auto auto 5%
 }
 
 .textBox>p {
